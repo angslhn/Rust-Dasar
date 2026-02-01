@@ -1,11 +1,12 @@
 // Data Types
 
-/* Rust adalah bahasa "statically typed", artinya compiler harus mengetahui tipe data 
-   dari semua variabel saat kompilasi agar memori aman.
+/* 
+    Rust adalah bahasa "statically typed", artinya compiler harus mengetahui tipe data 
+    dari semua variabel saat kompilasi agar memori aman.
    
-   Ada dua kategori utama tipe data di Rust:
-   1. Scalar Types: Mewakili satu nilai tunggal (Integer, Float, Boolean, Char).
-   2. Compound Types: Menggabungkan beberapa nilai menjadi satu (Tuple, Array).
+    Ada dua kategori utama tipe data di Rust:
+      1. Scalar Types: Mewakili satu nilai tunggal (Integer, Float, Boolean, Char).
+      2. Compound Types: Menggabungkan beberapa nilai menjadi satu (Tuple, Array).
 */
 
 fn main() {
@@ -56,7 +57,6 @@ fn main() {
     // KESIMPULAN:
     // Gunakan &str jika teksnya fix/cuma buat baca.
     // Gunakan String jika teksnya perlu diubah/ditambah/input dari user.
-
 
     // --- 2. COMPOUND TYPES (Kumpulan Nilai) ---
 
