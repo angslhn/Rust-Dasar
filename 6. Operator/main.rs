@@ -1,4 +1,4 @@
-// Operators
+// Operator
 
 /* 
     Rust menyediakan kumpulan operator untuk aritmatika, perbandingan, dan logika.

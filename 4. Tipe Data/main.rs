@@ -1,4 +1,4 @@
-// Data Types
+// Tipe Data
 
 /* 
     Rust adalah bahasa "statically typed", artinya compiler harus mengetahui tipe data 
@@ -44,6 +44,7 @@ fn main() {
     // Ciri-ciri: Pakai tanda kutip dua ("...").
     let fullname: &str = "Aang Solihin";
     println!("Nama (slice): {}", fullname); 
+
 
     // 2. String Object (String)
     // Ini tipe data String yang lebih kompleks (Growable/Bisa membesar).

@@ -1,4 +1,4 @@
-// Variable
+// Variabel
 
 /* 
    Variabel di Rust secara default adalah immutable (tidak bisa diubah) demi keamanan memori.
