@@ -1,0 +1,91 @@
+# ======================
+# RUST CARGO CHEATSHEET
+# ======================
+
+# --- 1. MEMULAI PROJECT (START) ---
+
+# Membuat project baru (folder + file dasar)
+- cargo new nama_project
+
+# Menginisialisasi folder yang sudah ada menjadi project Rust
+- cargo init
+
+# --- 2. WORKFLOW HARIAN (DAILY) ---
+
+# Meng-compile DAN Menjalankan program (Mode Debug)
+- cargo run
+
+# Meng-compile DAN Menjalankan program (Mode Debug) dan secara offline
+- cargo run --offline
+
+# Mengecek error kode TANPA compile jadi exe (Super Cepat)
+# Sering-sering pakai ini saat sedang mengetik kode!
+- cargo check
+
+# Hanya meng-compile jadi binary (hasil di target/debug/)
+- cargo build
+
+# --- 3. MENGELOLA LIBRARY (DEPENDENCIES) ---
+
+# Download & tambah library ke Cargo.toml
+- cargo add nama_library          # Contoh: cargo add serde
+
+# Tambah library dengan fitur spesifik
+- cargo add nama_lib -F fitur     # Contoh: cargo add serde -F derive
+
+# Download library dari project
+- cargo fetch
+
+# Menghapus library dari project
+- cargo remove nama_library
+
+# Update versi library di Cargo.lock ke yang terbaru (Safe Update)
+- cargo update
+
+# Melihat pohon dependency (berguna cek konflik versi)
+- cargo tree
+
+# Cari library di crates.io lewat terminal
+- cargo search kata_kunci
+
+# --- 4. KERAPIAN & MAINTENANCE ---
+
+# Otomatis merapikan format kode (spasi, indentasi)
+- cargo fmt
+
+# "Guru Galak" - Memberi saran optimasi & peringatan kode
+- cargo clippy
+
+# Otomatis memperbaiki warning compiler yang simpel
+- cargo fix
+
+# Menghapus folder 'target/' (Bersih-bersih harddisk)
+- cargo clean
+
+# --- 5. SIAP RILIS (PRODUCTION) ---
+
+# Compile dengan optimasi penuh (Lebih lama, tapi hasil kencang & kecil)
+# Hasil ada di: target/release/
+- cargo build --release
+
+# Menjalankan program dalam mode release
+- cargo run --release
+
+# Install program buatanmu ke sistem komputer secara global
+- cargo install --path .
+
+# --- 6. TESTING & DOKUMENTASI ---
+
+# Menjalankan unit test
+- cargo test
+
+# Membuat dokumentasi HTML & membukanya di browser (Offline)
+- cargo doc --open
+
+# --- 7. OPSI TAMBAHAN (FLAGS) ---
+
+# Mode senyap (hanya tampilkan output program, sembunyikan log compile)
+- cargo run -q
+
+# Menjalankan binary tertentu (jika ada banyak file bin di project)
+- cargo run --bin nama_binary
