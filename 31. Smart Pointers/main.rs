@@ -1,7 +1,7 @@
 // Smart Pointers
 
 /* 
-    Pointer biasa hanya meminjam alamat memori (&).
+   Pointer biasa hanya meminjam alamat memori (&).
    Smart Pointers "memiliki" datanya dan mengatur kapan dihapus.
    
    Jenis utama:
