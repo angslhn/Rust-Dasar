@@ -1,4 +1,4 @@
-// Matematika
+// Math
 
 /* 
     Di Rust, operasi matematika dasar (+ - * / %) ada di level syntax.
